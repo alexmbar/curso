@@ -4,10 +4,12 @@ class Persona:
         self.nombre = nombre
         print "Se ha creado a", self.nombre, "de", self.edad, "anios"
 
-    def hablar(self, palabras = "No se que decir "):
-        print self.nombre,':', palabras
+    def hablar(self,* palabras):
+        for frase in palabras
+            print self.nombre,':', frase
 
 juan = Persona(18,"Juan")
-juan.hablar("Hola, estoy hablando")
+juan.hablar("Hola, estoy hablando","Este soy yo")
 luis = Persona(20,"Luis")
-luis.hablar("Hola, estoy hablando")
+luis.hablar("Hola, estoy hablando","Este soy yo")
+
